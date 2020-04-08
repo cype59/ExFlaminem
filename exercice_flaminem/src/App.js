@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import fire from './config/fire'
 import Login from './Login.js';
-import Home from './Home.js';
+import Master from './Master.js';
 import NavbarMenu from './Navbar.js';
 
 
@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavbarMenu></NavbarMenu>
-        <div>{this.state.user ? ( <Home/>) : (<Login />)}</div>
+        <div>{this.state.user ? ( <Master/>) : (<Login />)}</div>
       </div>
     );
   }
